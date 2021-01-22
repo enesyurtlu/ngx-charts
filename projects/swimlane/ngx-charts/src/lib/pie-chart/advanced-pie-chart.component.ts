@@ -84,9 +84,9 @@ export class AdvancedPieChartComponent extends BaseChartComponent {
   legendWidth: number;
   margin = [20, 20, 20, 20];
 
-  @Input() valueFormatting: (value: number) => any;
-  @Input() nameFormatting: (value: string) => any;
-  @Input() percentageFormatting: (value: number) => any;
+  @Input() valueFormatting: any;
+  @Input() nameFormatting: any;
+  @Input() percentageFormatting: any;
 
   update(): void {
     super.update();
